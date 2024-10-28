@@ -1,19 +1,20 @@
 function kliko() {
    
-    let a = document.getElementById('in1').value;
-    let b = document.getElementById('in2').value;
+    let a=document.getElementById('in1').value
+    let b=document.getElementById('in2').value
 
     if (a===""|| b ==="") { document.getElementById('in1').style.borderColor = "red"
         document.getElementById('in2').style.borderColor = "red"
 
     
-        alert('Please fill the form');
+        alert('Please fill the form')
     } else {
 
         document.getElementById('in1').style.borderColor = ""
-        document.getElementById('in2').style.borderColor = ""
-        document.getElementById('in1').value = ""
-        document.getElementById('in2').value = ""
+                 document.getElementById('in2').style.borderColor = ""
+          document.getElementById('in1').value = ""
+        
+      document.getElementById('in2').value = ""
     }
 }
 
@@ -58,6 +59,31 @@ toggleButton.addEventListener('click', () => {
 
 
 
+
+
+function ham() {
+    const navMenu = document.getElementById('navMenu');
+    const hamburgerIcon = document.getElementById('hamburger');
+    const closeIcon = document.getElementById('ex');
+
+    navMenu.classList.toggle('active');
+    if (navMenu.classList.contains('active')) {
+        hamburgerIcon.style.display = 'none';
+        closeIcon.style.display = 'block';
+    } else {
+        hamburgerIcon.style.display = 'block';
+        closeIcon.style.display = 'none';
+    }
+}
+function xt(){
+    const navMenu = document.getElementById('navMenu');
+        const hamburgerIcon = document.getElementById('hamburger');
+   const closeIcon = document.getElementById('ex');
+
+        navMenu.classList.remove('active')
+  hamburgerIcon.style.display = 'block'
+        closeIcon.style.display = 'none'
+}
 
 
 
